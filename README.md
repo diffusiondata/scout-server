@@ -29,7 +29,7 @@ Options:
  * -d Optional output directory, defaults to current directory.
  
 
-Ensure that any remote Flash players from which telemetry is required have a configured `.telemetry.cfg` file. When the server starts reminds you of this need, and suggests an example content:
+Ensure that any remote Flash players from which telemetry is required have a configured `.telemetry.cfg` file. The server reminds you of this need when it starts, and suggests an example:
 
     2014/09/04 18:19:49 INFO Server - Remember to set the configuration file on monitored hosts, for example
     TelemetryAddress=192.168.59.31:7934
