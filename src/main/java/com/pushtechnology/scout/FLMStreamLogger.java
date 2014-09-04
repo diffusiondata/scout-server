@@ -33,7 +33,7 @@ public class FLMStreamLogger implements Runnable {
 		final String remoteIPStr = getRemoteIP(socket).replace('.', '_');
 		
 		// Compose the filename, make it mildly less Windows hostile
-		final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd_HHHH_mm_ss");
+		final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss");
 		final String timeStampStr = dateFormat.format(new Date());
 		this.file = new File(options.getOutputDir(),String.format("%s__%s__%d.flm", remoteIPStr, timeStampStr,instanceNumber));
 		
